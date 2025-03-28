@@ -1,1 +1,3 @@
-# open-system
+# Open System
+
+Welcome to the code!
