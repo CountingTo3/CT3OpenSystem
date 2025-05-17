@@ -1,1 +1,3 @@
-# CT3OpenSystem
+# Open System
+
+Welcome to the code!
