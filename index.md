@@ -8,4 +8,4 @@ This site is currently a massive work in progress as I am currently a college st
 Also, as a disclaimer, as with all resources, there may be errors. I will try my best to fact check, but some do slip through the cracks. 
 If some do slip through, please raise issues in the GitHub repository.
 
-There are no lessons that are complete as of yet, but check out the [alpha](/lessons-alpha/index.md) for works in progress.
+There are no lessons that are complete as of yet, but check out the [alpha](lessons-alpha/index.md) for works in progress.
