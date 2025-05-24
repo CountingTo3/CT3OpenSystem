@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>###NAME### | CT3OS</title>
-    <link rel="stylesheet" href="../../styles.css">
-    <link rel="icon" type="image/png" href="../../favicon.png">
-</head>
-<body>
+    <head>
+        <title>###NAME### | CT3OS</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <link rel="icon" type="image/png" href="../../favicon.png">
+    </head>
+    <body>
+        <div class="top">
+            <h1 id="title";>###TITLE###</h1>
+            <p>ID: #####&nbsp;&nbsp;&nbsp;LM: YYYYMMMDD</p>
+        </div>
+        <button class="toTop" onclick="document.location='#top'">
+            <p style = "font-size: 24px;">⯅</p>
+            <p style = "font-size: 12px;">Top</p>
+        </button>
+        <noscript>This site may use JavaScript to display some example problems. 
+        Please be aware that they may not work in your browser.</noscript>
 
-<h1 title="ID:#####">###NAME###</h1>
-<h6>This is for math</h6>
-<p>This is for text.</p>
+        <h6>
+            This is for math
+        </h6>
+        <h2 id="###SUBHEADINGNAME###"><a class="head" href="# ###SUBHEADINGNAME###">###SUBHEADING###</a></h2>
+        <p>
+            This is for text.
+        </p>
 
-</body>
+    </body>
 </html>
