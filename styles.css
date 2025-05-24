@@ -3,27 +3,72 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 h1 {
-    color: black;
     font-size: 48px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+div.top {
+    color: black;
+    background-color: #EEEEEE;
     border: 6px solid black;
     border-radius: 24px;
-    padding: 4px;
+    padding: 12px;
     text-align: center;
+    margin-bottom: 12px;
     margin-left: 16.67%;
     margin-right: 16.67%;
 }
+button.toTop {
+    background-color: #EEEEEE;
+    position: fixed;
+    text-align: center;
+    text-decoration-line: none;
+    border: 3px solid black;
+    top: -9px;
+    right: 24px;
+    padding: 6px;
+    border-radius: 0px 0px 12px 12px;
+}
+button.toTop:hover {
+    background-color: #DDDDDD;
+    border: 3px solid black;
+}
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
 h6 {
     color: black;
-    background-color: rgb(255, 191, 255);
+    background-color: #EEDDEE;
     font-size:  24px;
     border: 2px solid rgb(63,63,63);
     border-radius: 6px;
-    padding: 2px;
+    padding: 6px;
     text-align: center;
-    margin: 10px;
+    margin: 6px;
 }
 p {
     color: black;
     font-size: 18px;
-    margin: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+a.head:link, a.head:visited {
+    color:black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.head:hover {
+    color:#888888;
+    background-color: transparent;
+    text-decoration: underline #888888;
 }
