@@ -1,3 +1,12 @@
+/*
+h1 is title
+h2 is subheading
+h3
+h4
+h5 is problem
+h6 is equation
+p is regular text
+*/
 body {
     background-color: #EEEEEE;
     font-family: 'Courier New', Courier, monospace;
@@ -18,30 +27,62 @@ div.top {
     margin-left: 16.67%;
     margin-right: 16.67%;
 }
-button.toTop {
+button.toTop, button.goBack {
     background-color: #EEEEEE;
     position: fixed;
     text-align: center;
     text-decoration-line: none;
     border: 3px solid black;
     top: -9px;
-    right: 24px;
     padding: 6px;
     border-radius: 0px 0px 12px 12px;
 }
-button.toTop:hover {
+button.toTop {
+    right: 24px;
+}
+button.goBack {
+    left: 24px;
+}
+button.check, button.solution {
+    background-color: #EEEEEE;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding: 6px;
+    border: 1px solid;
+    border-radius: 6px;
+}
+button:hover {
     background-color: #DDDDDD;
-    border: 3px solid black;
+}
+button:active {
+    background-color: #DDEEEE;
+}
+input {
+    font-size: 18px;
+    padding: 6px;
+    border: 1px solid;
+    border-radius: 6px;
 }
 h2 {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
-    text-decoration-line: underline;
+    text-decoration-line: none;
     margin-top: 12px;
     margin-bottom: 0px;
     margin-left: 12px;
     margin-right: 12px;
+}
+h5 {
+    color: black;
+    background-color: #DDEEEE;
+    font-weight: normal;
+    font-size:  24px;
+    border: 2px solid rgb(63,63,63);
+    border-radius: 6px;
+    padding: 6px;
+    text-align: left;
+    margin: 6px;
 }
 h6 {
     color: black;
@@ -52,6 +93,8 @@ h6 {
     padding: 6px;
     text-align: center;
     margin: 6px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 p {
     color: black;
@@ -71,4 +114,17 @@ a.head:hover {
     color:#888888;
     background-color: transparent;
     text-decoration: underline #888888;
+}
+
+@media only screen and (max-width: 600px) {
+    h1.title {
+        font-size: 8vw;
+    }
+    p.title {
+        font-size: 3vw;
+    }
+    h6 {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
 }

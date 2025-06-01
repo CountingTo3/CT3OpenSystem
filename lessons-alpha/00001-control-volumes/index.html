@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Control Volumes Analysis | CT3OS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../styles.css">
+        <link rel="icon" type="image/png" href="../../favicon.png">
+        <script src="problems.js"></script>
+        <script src="../../format.js"></script>
+    </head>
+    <!--
+    h1 is title
+    h2 is subheading
+    h3
+    h4
+    h5 is problem
+    h6 is equation
+    -->
+    <body>
+        <div class="top" id="top">
+            <h1 id="title">Control Volume Analysis</h1>
+            <h2 style="text-transform: none; margin-top: 0px;">Seen in: Thermodynamics/Fluid Mechanics</h2>
+            <p>ID: 00001&nbsp;&nbsp;&nbsp;LM: 2025JUN01</p>
+        </div>
+        <button class="toTop" onclick="document.location='#top'">
+            <p style = "font-size: 24px;">&#x2BC5;</p>
+            <p style = "font-size: 12px;"><strong>Top</strong></p>
+        </button>
+        <button class="goBack" onclick="document.location='../index.md'">
+            <p style = "font-size: 24px;">&#x2BC7;</p>
+            <p style = "font-size: 12px;"><strong>Back</strong></p>
+        </button>
+        <noscript>This site may use JavaScript to display some example problems. 
+        Please be aware that they may not work in your browser.</noscript>
+
+        <p>
+            &nbsp;Control volume analysis considers the change in energy of some 
+            specific volume. Unlike the experimental idea of "control", the volume 
+            can change signifcantly. In this case, "control" refers to the control 
+            of your choice of volume. <br>
+            &nbsp;For example, a piston from an engine can be 
+            considered a control volume despite compressing, thus changing volume, 
+            and taking in and exhausting gasoline, thus changing mass.<br>
+            &nbsp;According to conservation of energy, the following equation 
+            applies.
+        </p>
+        <h6>
+            <math>
+                <msub><mtext>E</mtext><mtext>in</mtext></msub>
+                <mo>=</mo>
+                <msub><mtext>E</mtext><mtext>out</mtext></msub>
+            </math>
+        </h6>
+        <p>
+            &nbsp;It is important to note that sign conventions differ. The sign 
+            convention I was taught is that heat gain is positive and work done 
+            to the environment is positive.
+        </p> 
+        <h6>
+            <math>
+                <mtext>Q</mtext>
+                <mo>=</mo>
+                <mtext>W</mtext>
+                <mo>+</mo>
+                <mtext>E</mtext>
+            </math>
+        </h6>
+        <p>
+            &nbsp;For many thermodynamics problems it can be assumed that potential 
+            energy does not change. However, there is a possibility that kinetic 
+            energy does. Note that the following equations are only true when 
+            neither change.
+        </p>
+        <h6>
+            <math>
+                <msub><mtext>Q</mtext><mtext>in</mtext></msub>
+                <mo>-</mo>
+                <msub><mtext>W</mtext><mtext>in</mtext></msub>
+                <mo>=</mo>
+                <msub><mtext>Q</mtext><mtext>out</mtext></msub>
+                <mo>-</mo>
+                <msub><mtext>W</mtext><mtext>out</mtext></msub>
+            </math> <br><br>
+            <math>
+                <mtext>&Delta;Q</mtext>
+                <mo>=</mo>
+                <mtext>&Delta;W</mtext>
+            </math>
+        </h6>
+        <p>
+            &nbsp;The following is a sample problem:
+        </p>
+        <h5 class="problem1">
+            Problem 1:<br>
+            Steam enters an adiabatic compressor at 1MPa and 200°C. The steam exits 
+            the compressor at 10MPa and 500°C. Determine the work done by the 
+            compressor per unit mass in kJ/kg. (h1=2827.4 kJ/kg; h2=3374.0 kJ/kg)
+            <br>
+            <br><input type="text" id="answer1">
+            <math>
+                <mfrac>
+                    <mtext>kJ</mtext>
+                    <mtext>kg</mtext>
+                </mfrac>
+            </math>
+            <button class="check" onclick="checkAns1()" id="check1">Check</button>
+            <button class="solution" onclick="viewSol1()" id="view1">View Solution</button>
+            <div style="display:none" id="verdict1">Check Button</div>
+            <div style="display:none" id="solution1">
+                <br>
+                Using the equation
+                <math>
+                    <mtext>&Delta;Q</mtext>
+                    <mo>=</mo>
+                    <mtext>&Delta;W</mtext>
+                </math>
+                combined with the fact that the compressor is <strong>
+                adiabatic</strong>, the work done by the compressor is equal to
+                the change in heat of the steam.<br><br>
+                Using a steam table (steam tables may vary), 
+                <math>
+                    <msub><mtext>h</mtext><mtext>1</mtext></msub><mo>=</mo><mtext>2827.4</mtext>
+                    <mtext>&nbsp;and&nbsp;</mtext>
+                    <msub><mtext>h</mtext><mtext>2</mtext></msub><mo>=</mo><mtext>3374.0</mtext>
+                </math> <br><br>
+                Thus,
+                <math>
+                    <mtext>&Delta;W</mtext>
+                    <mo>=</mo>
+                    <mtext>&Delta;Q</mtext>
+                    <mo>=</mo>
+                    <msub><mtext>Q</mtext><mtext>2</mtext></msub>
+                    <mo>-</mo>
+                    <msub><mtext>Q</mtext><mtext>1</mtext></msub>
+                    <mo>=</mo>
+                    <msub><mtext>h</mtext><mtext>2</mtext></msub>
+                    <mo>-</mo>
+                    <msub><mtext>h</mtext><mtext>1</mtext></msub>
+                    <mo>=</mo>
+                    <mtext>546.6</mtext>
+                    <mfrac>
+                        <mtext>kJ</mtext>
+                        <mtext>kg</mtext>
+                    </mfrac>
+                </math>
+            </div>
+        </h5>
+    </body>
+</html>
