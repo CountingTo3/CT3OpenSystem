@@ -11,57 +11,12 @@ body {
     background-color: #EEEEEE;
     font-family: 'Courier New', Courier, monospace;
 }
+
+/*text*/
 h1 {
     font-size: 48px;
     margin-top: 0px;
     margin-bottom: 0px;
-}
-div.top {
-    color: black;
-    background-color: #EEEEEE;
-    border: 6px solid black;
-    border-radius: 24px;
-    padding: 12px;
-    text-align: center;
-    margin-bottom: 12px;
-    margin-left: 16.67%;
-    margin-right: 16.67%;
-}
-button.toTop, button.goBack {
-    background-color: #EEEEEE;
-    position: fixed;
-    text-align: center;
-    text-decoration-line: none;
-    border: 3px solid black;
-    top: -9px;
-    padding: 6px;
-    border-radius: 0px 0px 12px 12px;
-}
-button.toTop {
-    right: 24px;
-}
-button.goBack {
-    left: 24px;
-}
-button.check, button.solution {
-    background-color: #EEEEEE;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
-    padding: 6px;
-    border: 1px solid;
-    border-radius: 6px;
-}
-button:hover {
-    background-color: #DDDDDD;
-}
-button:active {
-    background-color: #DDEEEE;
-}
-input {
-    font-size: 18px;
-    padding: 6px;
-    border: 1px solid;
-    border-radius: 6px;
 }
 h2 {
     font-size: 30px;
@@ -104,11 +59,71 @@ p {
     margin-left: 12px;
     margin-right: 12px;
 }
+/* br {
+    margin-bottom: 6px;
+} */
 
-a.head:link, a.head:visited {
-    color:black;
-    background-color: transparent;
+div.top {
+    color: black;
+    background-color: #DDDDDD;
+    border: 6px solid black;
+    border-radius: 24px;
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 12px;
+    margin-left: 16.67%;
+    margin-right: 16.67%;
+}
+
+/*buttons*/ 
+button.toTop, button.goBack {
+    background-color: #EEEEEE;
+    position: fixed;
+    text-align: center;
+    text-decoration-line: none;
+    border: 3px solid black;
+    top: -9px;
+    padding: 6px;
+    border-radius: 0px 0px 12px 12px;
+}
+button.toTop {
+    right: 24px;
+}
+button.goBack {
+    left: 24px;
+}
+button.check, button.solution {
+    background-color: #EEEEEE;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding: 6px;
+    border: 1px solid;
+    border-radius: 6px;
+}
+button:hover {
+    background-color: #DDDDDD;
+}
+button:active {
+    background-color: #DDEEEE;
+}
+
+
+input {
+    font-size: 18px;
+    padding: 6px;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+a:link {
+    color: black;
     text-decoration: none;
+}
+a:hover {
+    text-decoration: underline #000000;
+}
+a.head:link, a.head:visited {
+    background-color: transparent;
 }
 a.head:hover {
     color:#888888;

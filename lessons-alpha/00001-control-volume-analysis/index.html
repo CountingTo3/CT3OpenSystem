@@ -19,7 +19,9 @@
     <body>
         <div class="top" id="top">
             <h1 id="title">Control Volume Analysis</h1>
-            <h2 style="text-transform: none; margin-top: 0px;">Seen in: Thermodynamics/Fluid Mechanics</h2>
+            <h2 style="text-transform: none;">
+                Seen in: Thermodynamics/ Fluid Mechanics
+            </h2>
             <p>ID: 00001&nbsp;&nbsp;&nbsp;LM: 2025JUN01</p>
         </div>
         <button class="toTop" onclick="document.location='#top'">
@@ -30,17 +32,19 @@
             <p style = "font-size: 24px;">&#x2BC7;</p>
             <p style = "font-size: 12px;"><strong>Back</strong></p>
         </button>
-        <noscript>This site may use JavaScript to display some example problems. 
+        <noscript>This site may use JavaScript to display and check example problems. 
         Please be aware that they may not work in your browser.</noscript>
 
         <p>
-            &nbsp;Control volume analysis considers the change in energy of some 
-            specific volume. Unlike the experimental idea of "control", the volume 
-            can change signifcantly. In this case, "control" refers to the control 
-            of your choice of volume. <br>
+            &nbsp;Control volumes are another name for open systems. Control volume 
+            analysis considers the change in energy of some specific volume. Unlike 
+            the experimental idea of "control", the volume can change signifcantly. 
+            In this case, "control" refers to the control of your choice of volume. 
+            <br>
             &nbsp;For example, a piston from an engine can be 
             considered a control volume despite compressing, thus changing volume, 
-            and taking in and exhausting gasoline, thus changing mass.<br>
+            and taking in and exhausting gasoline, thus changing mass. An open 
+            system does not have any constraints on what goes in and out of it.<br>
             &nbsp;According to conservation of energy, the following equation 
             applies.
         </p>
@@ -69,7 +73,7 @@
             &nbsp;For many thermodynamics problems it can be assumed that potential 
             energy does not change. However, there is a possibility that kinetic 
             energy does. Note that the following equations are only true when 
-            neither change.
+            neither potential nor kinetic energy change.
         </p>
         <h6>
             <math>
@@ -78,6 +82,15 @@
                 <msub><mtext>W</mtext><mtext>in</mtext></msub>
                 <mo>=</mo>
                 <msub><mtext>Q</mtext><mtext>out</mtext></msub>
+                <mo>-</mo>
+                <msub><mtext>W</mtext><mtext>out</mtext></msub>
+            </math> <br><br>
+            <math>
+                <msub><mtext>Q</mtext><mtext>in</mtext></msub>
+                <mo>-</mo>
+                <msub><mtext>Q</mtext><mtext>out</mtext></msub>
+                <mo>=</mo>
+                <msub><mtext>W</mtext><mtext>in</mtext></msub>
                 <mo>-</mo>
                 <msub><mtext>W</mtext><mtext>out</mtext></msub>
             </math> <br><br>
@@ -145,5 +158,13 @@
                 </math>
             </div>
         </h5>
+        <hr>
+        <div>
+            <p>
+                <a href="https://github.com/CountingTo3/CT3OpenSystem">Github</a>
+                <br>
+                Thanks for reaching the bottom!
+            </p>
+        </div>
     </body>
 </html>
